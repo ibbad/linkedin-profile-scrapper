@@ -77,10 +77,12 @@ celerybeat-schedule
 
 # dotenv
 .env
+.idea
 
 # virtualenv
 venv/
 ENV/
+flask/
 
 # Spyder project settings
 .spyderproject
