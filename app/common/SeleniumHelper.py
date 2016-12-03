@@ -194,47 +194,27 @@ class SeleniumHelper:
         return ext
 
     def save_screenshot(self, file_path):
+        """
+        Save screen shot to given file path.
+        :param file_path: file path to save screenshot.
+        :return:
+        """
         self.driver.save_screenshot(file_path)
 
     def load_and_wait(self, url, selector, wait=99999):
+        """
+        Load page and wait until it is completely loaded.
+        :param url: url of the page to be loaded
+        :param selector: the element which needs to be loaded.
+        :param wait: time to wait for selector to be loaded.
+        :return:
+        """
         self.load_page(url)
         return self.wait_show_element(selector, wait)
 
     def close(self):
+        """
+        Close the selenium driver.
+        :return:
+        """
         self.drive.quit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
