@@ -16,7 +16,7 @@ class ElasticSearchConnector(Elasticsearch):
     def add_json(self, json_element):
         self.els.create(self.els_index, self.els_type, json_element)
 
-    def get_user_restults(self, key, value):
+    def get_user_results(self, key, value):
         results = self.els.search(self.els_index, self.els_type,
                                   body={
                                       "query": {
